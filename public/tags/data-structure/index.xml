@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Structure on Vikram Jadhav</title>
+    <link>https://codingwithvikram.surge.sh/tags/data-structure/</link>
+    <description>Recent content in Data Structure on Vikram Jadhav</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://codingwithvikram.surge.sh/tags/data-structure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linked List implementation in Python</title>
+      <link>https://codingwithvikram.surge.sh/post/2017-05-28-python-linked-list/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/post/2017-05-28-python-linked-list/</guid>
+      <description>In computer science Linked list is a data structure contains sequence of nodes where each node points to the next node in the sequence. We can also say the node stores a reference to the next node.
+ Linked List is a very popular data structure as it is very flexible and can be used to implement other abstract data types such as Stack, Queue, Tree and much more.</description>
+    </item>
+    
+  </channel>
+</rss>

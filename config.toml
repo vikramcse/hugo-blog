@@ -1,0 +1,56 @@
+baseURL = "https://codingwithvikram.surge.sh/"
+languageCode = "en-us"
+title = "Vikram Jadhav"
+theme = "minimal"
+googleAnalytics = "UA-82436973-1"
+
+[params]
+    author = "Vikram Jadhav"
+    description = "Software Engineer at Visiable Alpha. On this website you can find notes about my learnings"
+    githubUsername = "vikramcse"
+    accent = "#E64A19"
+    showBorder = true
+    backgroundColor = "white"
+    font = "PT Sans" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "solarized-dark"
+    highlightLanguages = ["go", "python", "javascript", "html", "swift"]
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 2
+
+#[[menu.main]]
+#    url = "/project/"
+#    name = "Projects"
+#    weight = 3
+
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+#[[menu.icon]]
+#    url = "mailto:me@example.com"
+#    name = "envelope-o"
+#    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/vikramcse/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/vikramcse10"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/vikram-jadhav-28394439/"
+    name = "linkedin"
+    weight = 4

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Vikram Jadhav</title>
+    <link>https://codingwithvikram.surge.sh/tags/</link>
+    <description>Recent content in Tags on Vikram Jadhav</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://codingwithvikram.surge.sh/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Structure</title>
+      <link>https://codingwithvikram.surge.sh/tags/data-structure/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/tags/data-structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://codingwithvikram.surge.sh/tags/javascript/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://codingwithvikram.surge.sh/tags/python/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/tags/python/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

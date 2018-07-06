@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Vikram Jadhav</title>
+    <link>https://codingwithvikram.surge.sh/tags/javascript/</link>
+    <description>Recent content in Javascript on Vikram Jadhav</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://codingwithvikram.surge.sh/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript: How to detect online status in browser</title>
+      <link>https://codingwithvikram.surge.sh/post/2017-01-22-javascript-detect-online/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/post/2017-01-22-javascript-detect-online/</guid>
+      <description>Sometimes we need to check whether the user is online. In today&amp;rsquo;s world, more than billion people are online, but not everyone has a better internet connection; so there is a nice feature in modern browsers that we can cache the data in the browser&amp;rsquo;s local storage so next time the user visits, there is no need to download the data again.
+ The browsers provide navigator property that will help us to find the online status of the user.</description>
+    </item>
+    
+  </channel>
+</rss>

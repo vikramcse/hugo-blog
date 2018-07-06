@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Python: Tuple Fundamentals</title>
+        
+        <style>
+
+    html body {
+        font-family: 'PT Sans', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #E64A19;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://codingwithvikram.surge.sh/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Sans">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/html.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.42.2" />
+        
+
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82436973-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-82436973-1');
+        </script>
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Python: Tuple Fundamentals</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/vikramcse/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/vikramcse10"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/vikram-jadhav-28394439/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2017-01-01-python-tuples/">Python: Tuple Fundamentals</a></h4>
+    <h5>January 1, 2017</h5>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/python"><kbd class="item-tag">Python</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<p>Tuple represents one of the three currently implemented <code>sequence data types</code> along with <code>lists</code> and <code>ranges</code>.</p>
+
+<p>Tuples are used to group any number of items into a single compound value regardless if their type</p>
+
+<pre><code class="language-python">    &gt;&gt;&gt; the_tuple = ('names', 55, False, 'youtube')
+    &gt;&gt;&gt; type (the_tuple)
+    tuple
+</code></pre>
+
+<p>We can extract elements from the tuple using the index operator</p>
+
+<pre><code class="language-python">    &gt;&gt;&gt; the_tuple[1]
+    55
+</code></pre>
+
+<p>The index must be a valid number and withing the range of the tuple</p>
+
+<pre><code class="language-python">    &gt;&gt;&gt; the_tuple[10]
+    IndexError: tuple index out of range
+</code></pre>
+
+<p>We can perform also slicing like python lists.</p>
+
+<pre><code class="language-python">    &gt;&gt;&gt; the_tuple[1 : 3]
+    (55, False)
+</code></pre>
+
+<p>We can use <code>in</code> operator in tuples</p>
+
+<pre><code class="language-python">    &gt;&gt;&gt; 55 in the_tuple
+    True
+</code></pre>
+
+<p>keep in mind that tuples are immutable so trying to assing an iten is an error.</p>
+
+<blockquote>
+<p><code>immutable</code> object is an object whose state cannot be modified after it is created.</p>
+</blockquote>
+
+<pre><code class="language-python">    &gt;&gt;&gt; the_tuple[1] = 'gmail'
+    TypeError: 'tuple' object does not support item assignment
+</code></pre>
+
+<h3 id="though-tuples-behavior-is-somewhat-like-python-list-but-their-are-some-constrains">Though tuples behavior is somewhat like python list but their are some constrains.</h3>
+
+<p>we can&rsquo;t add elements to a tuple. Tuples do not have <code>append</code> and <code>extend</code> methods</p>
+
+<pre><code class="language-python">    &gt;&gt;&gt; t.append(&quot;abcd&quot;)
+	AttributeError: 'tuple' object has no attribute 'append'
+</code></pre>
+
+<p>we can not remove elements to a tuple. Tuples do not have <code>remove</code> and <code>pop</code> methods</p>
+
+<pre><code class="language-python">    &gt;&gt;&gt; t.remove(&quot;abcd&quot;)
+	AttributeError: 'tuple' object has no attribute 'remove'
+</code></pre>
+
+<p>we can not find elements in a tuple. Tuples do not have <code>index</code> method.</p>
+
+<pre><code class="language-python">    &gt;&gt;&gt; t.index(&quot;abcd&quot;)
+	AttributeError: 'tuple' object has no attribute 'index'
+</code></pre>
+
+<h3 id="so-when-we-should-use-python-tuple">So when we should use python tuple</h3>
+
+<ul>
+<li><p>Tuples are faster than list, if you want to define some set of constant values and iterate it the use tuples instead list.</p>
+
+<p>for example: Suppose we want to define days in a week then we should use tuples instead list.</p></li>
+</ul>
+
+<pre><code class="language-python">    &gt;&gt;&gt; days_in_week = ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+</code></pre>
+
+<ul>
+<li>Tuples make your code safer as we can not modify the tuples (write protected), so no one add new day in the tuple</li>
+</ul>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2017-05-28-python-linked-list/">Linked List implementation in Python</a></h4>
+    <h5>May 28, 2017</h5>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/python"><kbd class="item-tag">Python</kbd></a>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/data-structure"><kbd class="item-tag">Data Structure</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2017-05-23-python-deepcopy/">Python Copy and Deepcopy</a></h4>
+    <h5>May 23, 2017</h5>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/python"><kbd class="item-tag">Python</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2017-01-01-diff/">Python: The difference between &#39;==&#39; and &#39;is&#39;</a></h4>
+    <h5>January 1, 2017</h5>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/python"><kbd class="item-tag">Python</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

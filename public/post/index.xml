@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Vikram Jadhav</title>
+    <link>https://codingwithvikram.surge.sh/post/</link>
+    <description>Recent content in Posts on Vikram Jadhav</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://codingwithvikram.surge.sh/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linked List implementation in Python</title>
+      <link>https://codingwithvikram.surge.sh/post/2017-05-28-python-linked-list/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/post/2017-05-28-python-linked-list/</guid>
+      <description>In computer science Linked list is a data structure contains sequence of nodes where each node points to the next node in the sequence. We can also say the node stores a reference to the next node.
+ Linked List is a very popular data structure as it is very flexible and can be used to implement other abstract data types such as Stack, Queue, Tree and much more.</description>
+    </item>
+    
+    <item>
+      <title>Python Copy and Deepcopy</title>
+      <link>https://codingwithvikram.surge.sh/post/2017-05-23-python-deepcopy/</link>
+      <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/post/2017-05-23-python-deepcopy/</guid>
+      <description>Python&amp;rsquo;s Shallow and Deepcopy Python&amp;rsquo;s integer, float, boolean, string and tuple are immutable, means once assigned value to a variable it&amp;rsquo;s value can not be changed.
+let&amp;rsquo;s take a simple example
+number1 = 10 number2 = number1  In the above example as you can see we copied the reference of number1 and assigned it to the number2. let&amp;rsquo;s check if it is true!
+number1 = 10 print id(number1) # 54032216 number2 = number1 print id(number2) # 54032216  So let&amp;rsquo;s re-assign the value of number1 to 20, then it should change the value of number2 right?</description>
+    </item>
+    
+    <item>
+      <title>JavaScript: How to detect online status in browser</title>
+      <link>https://codingwithvikram.surge.sh/post/2017-01-22-javascript-detect-online/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/post/2017-01-22-javascript-detect-online/</guid>
+      <description>Sometimes we need to check whether the user is online. In today&amp;rsquo;s world, more than billion people are online, but not everyone has a better internet connection; so there is a nice feature in modern browsers that we can cache the data in the browser&amp;rsquo;s local storage so next time the user visits, there is no need to download the data again.
+ The browsers provide navigator property that will help us to find the online status of the user.</description>
+    </item>
+    
+    <item>
+      <title>Python: The difference between &#39;==&#39; and &#39;is&#39;</title>
+      <link>https://codingwithvikram.surge.sh/post/2017-01-01-diff/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/post/2017-01-01-diff/</guid>
+      <description>For a beginner, the is operator may seem like as the == operator but actually, those are not same.
+Basic principle of object creation Computer Science  An object can be a variable, a data structure, a function or a method when defined, new memory location is created and a value assigned to it.
+ So in the context of python, when a new variable, dict, list is defined, new memory location is created and a value is assigned to it.</description>
+    </item>
+    
+    <item>
+      <title>Python: Tuple Fundamentals</title>
+      <link>https://codingwithvikram.surge.sh/post/2017-01-01-python-tuples/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingwithvikram.surge.sh/post/2017-01-01-python-tuples/</guid>
+      <description>Tuple represents one of the three currently implemented sequence data types along with lists and ranges.
+Tuples are used to group any number of items into a single compound value regardless if their type
+&amp;gt;&amp;gt;&amp;gt; the_tuple = (&#39;names&#39;, 55, False, &#39;youtube&#39;) &amp;gt;&amp;gt;&amp;gt; type (the_tuple) tuple  We can extract elements from the tuple using the index operator
+&amp;gt;&amp;gt;&amp;gt; the_tuple[1] 55  The index must be a valid number and withing the range of the tuple</description>
+    </item>
+    
+  </channel>
+</rss>

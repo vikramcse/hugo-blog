@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Linked List implementation in Python</title>
+        
+        <style>
+
+    html body {
+        font-family: 'PT Sans', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #E64A19;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://codingwithvikram.surge.sh/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Sans">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/html.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.42.2" />
+        
+
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82436973-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-82436973-1');
+        </script>
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Linked List implementation in Python</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/vikramcse/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/vikramcse10"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/vikram-jadhav-28394439/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2017-05-28-python-linked-list/">Linked List implementation in Python</a></h4>
+    <h5>May 28, 2017</h5>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/python"><kbd class="item-tag">Python</kbd></a>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/data-structure"><kbd class="item-tag">Data Structure</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<blockquote>
+<p>In computer science Linked list is a data structure contains sequence of nodes where each node points to the next node in the sequence. We can also say the node stores a reference to the next node.</p>
+</blockquote>
+
+<p>Linked List is a very popular data structure as it is very flexible and can be used to implement other abstract data types such as Stack, Queue, Tree and much more.</p>
+
+<p>Let&rsquo;s first explore why we should use the Linked List.</p>
+
+<h3 id="advantages">Advantages</h3>
+
+<ol>
+<li>New items can be added to the first and last to Linked List very easily</li>
+<li>No need to define initial size of the Linked List</li>
+<li>Backtracking can be implemented using Doubly where Linked List</li>
+</ol>
+
+<h3 id="disadvantages">disadvantages</h3>
+
+<ol>
+<li>It takes more memory than to array to store the elements i.e. we need to store the reference of next node location</li>
+<li>To access a elements form the Linked List we need to start form the head as it is a sequential access data structure, where in array we can access any element randomly</li>
+</ol>
+
+<p>Ok vikram, that is enough theory knowledge, shall we start implementing the Linked List?</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>In Linked List the basic data block is a <code>Node</code> which holds two things
+1. Data
+2. Pointer to the next node</p>
+
+<pre><code class="language-python">class Node(object):
+    &quot;&quot;&quot;
+    An internal class that represents a node with a single item
+    and a link to the next node.
+    &quot;&quot;&quot;
+
+    def __init__(self, item):
+        self.item = item
+        self.next = None
+</code></pre>
+
+<p>In the above code we created a class Node where the constructor accepts a data elements and initially the next pointer is None.</p>
+
+<p>Now lets define Linked List class</p>
+
+<pre><code class="language-python">class LinkedList:
+    def __init__(self):
+        self.size = 0
+        self.head = None
+</code></pre>
+
+<p>Here the constructor initializes the <code>size</code> which is initially <code>zero</code> and the <code>head</code> points to None. The <code>head</code> is used to store the first node location so that we can traverse to other nodes form head node.</p>
+
+<p>Now it&rsquo;s time to add some element to Linked List, let&rsquo;s define append_last function.</p>
+
+<pre><code class="language-python">def append_last(self, value):
+  if not value:
+    return ValueError('Value must be need to insert into List')
+
+    # Point 1
+    new_node = Node(value)
+
+    if self.head is None:
+      self.head = new_node # Point 2
+    else:
+      # Point 3
+      temp = self.head
+      while temp.next is not None:
+        temp = temp.next
+      temp.next = new_node
+  self.size += 1 # Point 4
+</code></pre>
+
+<p>Let&rsquo;s go through the append_last code, we are conforming that the inserting value is not None else we through exception.</p>
+
+<p>Point 1: Here we are creating a new Node object with <code>value</code> as a data element and at this point the next pointer points to None</p>
+
+<p>Point 2: If the List&rsquo;s as <code>head</code> variable is None means the List is empty so the newly created node is a <code>head</code> Node</p>
+
+<p>Point 3: We come here when the <code>head</code> is not None, means the List has some elements, so the new Node is to be appended to the end Node. To access the end Node we need to traverse each node until we get next pointer None</p>
+
+<p>Point 4: Increment the size if List</p>
+
+<p>form above explanation we can notice the append_last Implementation was very easy, so why not to append at the front.</p>
+
+<pre><code class="language-python">def append_front(self, value):
+  if not value:
+    return ValueError('Value must be need to insert into stack')
+
+    new_node = Node(value)
+
+  if self.head is None:
+      self.head = new_node
+  else:
+      new_node.next = self.head
+      self.head = new_node
+  self.size += 1
+</code></pre>
+
+<p>The <code>append_front</code> the explanation is same as <code>append_last</code> function the only difference is the new Node is to appended at the <code>front</code> so the new Node next pointer will point to the <code>head</code> Node and the <code>head</code> will be the <code>new</code> Node.</p>
+
+<p>Here is full working code for Linked List</p>
+
+<pre><code class="language-python">class Node(object):
+    &quot;&quot;&quot;
+    An internal class that represents a node with a single item
+    and a link to the next node.
+    &quot;&quot;&quot;
+
+    def __init__(self, item):
+      self.item = item
+      self.next = None
+
+
+class LinkedList:
+    def __init__(self):
+      self.size = 0
+      self.head = None
+
+    def append_last(self, value):
+      if not value:
+        return ValueError('Value must be need to insert into List')
+
+      new_node = Node(value)
+
+      if self.head is None:
+        self.head = new_node
+      else:
+        temp = self.head
+        while temp.next is not None:
+          temp = temp.next
+        temp.next = new_node
+    self.size += 1
+
+    def append_front(self, value):
+      if not value:
+        return ValueError('Value must be need to insert into List')
+
+      new_node = Node(value)
+
+      if self.head is None:
+        self.head = new_node
+      else:
+        new_node.next = self.head
+        self.head = new_node
+      self.size += 1
+
+    def get_size(self):
+      return self.size
+
+    def __str__(self):
+      temp = self.head
+      ll_string = ''
+
+      while temp is not None:
+        ll_string += str(temp.item) + str(&quot; &quot;)
+        temp = temp.next
+      return ll_string.strip()
+</code></pre>
+
+<p>The Linked List is not always optimal choice of the data structure, there are other data structures those are better at some time.</p>
+
+<h3 id="time-analysis">Time Analysis</h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Linked List</th>
+<th>Dynamic Array</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Indexing</td>
+<td>O(n)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>Insert/delete at beginning</td>
+<td>O(1)</td>
+<td>O(n)</td>
+</tr>
+
+<tr>
+<td>Insert/delete at end</td>
+<td>O(1)</td>
+<td>O(1)</td>
+</tr>
+
+<tr>
+<td>Insert/delete in middle</td>
+<td>Search Time + O(1)</td>
+<td>O(n)</td>
+</tr>
+
+<tr>
+<td>Wasted Space</td>
+<td>O(n)</td>
+<td>O(n)</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p>One real life example of Liked List could be SMS messages, consider a multipart messages are received and each message has <code>next</code> pointer to the next consecutive message after receiving all the messages the messages are assembled by the next memory addresses</p>
+</blockquote>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2017-05-23-python-deepcopy/">Python Copy and Deepcopy</a></h4>
+    <h5>May 23, 2017</h5>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/python"><kbd class="item-tag">Python</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2017-01-01-python-tuples/">Python: Tuple Fundamentals</a></h4>
+    <h5>January 1, 2017</h5>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/python"><kbd class="item-tag">Python</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/2017-01-01-diff/">Python: The difference between &#39;==&#39; and &#39;is&#39;</a></h4>
+    <h5>January 1, 2017</h5>
+    
+    <a href="https://codingwithvikram.surge.sh/tags/python"><kbd class="item-tag">Python</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
